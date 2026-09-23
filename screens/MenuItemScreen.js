@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
     row: { flexDirection: 'row', justifyContent: 'space-between', padding: 12, borderBottomWidth: 1, borderBottomColor: '#4a6a5a' },
     itemName: { color: 'white', fontSize: 16 },
     itemPrice: { color: 'white', fontSize: 16 },
-},
 });
 
 export default MenuItemScreen;
