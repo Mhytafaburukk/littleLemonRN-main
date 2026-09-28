@@ -6,7 +6,7 @@
 
 *Built with React Native & Expo*
 
-![Little Lemon Demo](little_lemon.gif)
+![Little Lemon Demo](little_lemon_new.gif)
 
 <br/>
 
