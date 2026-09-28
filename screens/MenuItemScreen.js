@@ -19,7 +19,6 @@ const MenuItemScreen = () => {
 
     const [searchText, setSearchText] = React.useState('');
     const [activeFilter, setActiveFilter] = React.useState('');
-    const [menuData, setMenuData] = React.useState([]);
 
     const filteredData = ALL_ITEMS.filter(item => {
         const searchMatch = item.name.toLowerCase().includes(searchText.toLowerCase());
@@ -41,7 +40,7 @@ const MenuItemScreen = () => {
                     <Pressable
                         key={category}
                         style={[styles.filterBtn, activeFilter === category && styles.filterBtnActive]}
-                        onPress={() => setActiveFilter(category)}
+                        onPress={() => setActiveFilter(activeFilter === category ? '' : category)}
                     >
                         <Text style={styles.filterText}>{category}</Text>
                     </Pressable>
